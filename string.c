@@ -2,23 +2,23 @@
 #include<string.h>
  
 int main() {
-   char str[100], temp;
-   int i, j = 0;
+   char s[100], var;
+   int a,b = 0;
  
    printf("\nEnter the string :");
-   gets(str);
+   gets(s);
  
-   i = 0;
-   j = strlen(str) - 1;
+   a = 0;
+   b= strlen(s) - 1;
  
-   while (i < j) {
-      temp = str[i];
-      str[i] = str[j];
-      str[j] = temp;
-      i++;
-      j--;
+   while (a < b) {
+      var = str[a];
+      s[a] = str[b];
+      s[b] = var;
+      a++;
+      b--;
    }
  
-   printf("\nReverse string is :%s", str);
+   printf("\nReverse string is :%s", s);
    return (0);
 }
