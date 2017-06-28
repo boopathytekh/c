@@ -2,21 +2,14 @@
 #include<conio.h>
 void main()
 {
-int a;
-clrscr();
-printf("enter a number");
-scanf("%d",&a);
-if(a>0)
-{
-printf(number is positive");
-}
-else if(a<0)
-{
-printf("number is negative");
-}
-else
-{
-printf("number is zero");
-}
+int i;
+  clrscr();
+  scanf("%d",&i);
+  if(i>0)
+    printf("positive");
+  if(i<0)
+    printf("negative");
+  if(i==0)
+    printf("zero");
 getch();
 }
